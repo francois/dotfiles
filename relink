@@ -1,5 +1,5 @@
 #!/bin/sh
-for FILE in $( find ${PWD} -depth 1 -not -name $( basename $0 ) -not -name '.*' -not -name 'README*' )
+for FILE in $( find ${PWD} -maxdepth 1 -not -name $( basename $0 ) -not -name '.*' -not -name 'README*' )
 do
 	rm -rf ${HOME}/.$( basename ${FILE} )
 
