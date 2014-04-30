@@ -7,5 +7,4 @@ do
 	ln -s ${FILE} ${HOME}/.$( basename ${FILE} )
 done
 
-git submodule init
-git submodule update
+git submodule update --init
