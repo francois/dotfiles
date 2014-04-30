@@ -1,9 +1,9 @@
 [submodule "vim/bundle/ctrlp.vim"]
 	path = vim/bundle/ctrlp.vim
-	url = git://github.com:kien/ctrlp.vim.git
+	url = git://github.com/kien/ctrlp.vim.git
 [submodule "vim/bundle/vim-align"]
 	path = vim/bundle/vim-align
-	url = git://github.com:tsaleh/vim-align.git
+	url = git://github.com/tsaleh/vim-align.git
 [submodule "vim/bundle/vim-haskell"]
 	path = vim/bundle/vim-haskell
 	url = git://github.com/wlangstroth/vim-haskell.git
@@ -21,7 +21,7 @@
 	url = git://github.com/tpope/vim-sleuth.git
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
-	url = git://github.com:tpope/vim-surround.git
+	url = git://github.com/tpope/vim-surround.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
