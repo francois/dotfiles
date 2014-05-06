@@ -8,3 +8,11 @@ do
 done
 
 git submodule update --init
+
+VERSION=1
+crontab 2>/dev/null -l | grep --quiet auto-update-dotfiles:${VERSION}
+if [ $? -gt 0 ]
+then
+	echo "Installing crontab entry"
+	( crontab -l ; echo "1 * * * * cd $( readlink -f $PWD ) && git pull # auto-update-dotfiles:${VERSION}" ) | crontab -
+fi
