@@ -8,8 +8,12 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="maran"
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gl='git log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" -n 40'
+alias gs='git status --short'
+alias gpull='git pull'
+alias gpush='git push'
+alias ga='git add'
+alias gaa='git add --all'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
