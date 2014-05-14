@@ -67,7 +67,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.cabal/bin:/usr/local/bin"
 export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 LANGUAGE=en_US
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -81,5 +81,3 @@ fi
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
-
-export LC_ALL=en_US.UTF-8 LANGUAGE=en_US LANG=en_US.UTF-8
