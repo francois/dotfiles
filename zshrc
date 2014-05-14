@@ -46,6 +46,11 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
 
+APPEND_HISTORY="true"
+INC_APPEND_HISTORY="true"
+SHARE_HISTORY="false"
+HIST_IGNORE_DUPS="true"
+
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
