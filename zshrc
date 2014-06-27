@@ -81,3 +81,7 @@ fi
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
+
+# EC2
+export EC2_CERT=$HOME/.ec2/certificate.pem
+export EC2_PRIVATE_KEY=$HOME/.ec2/privkey.pem
