@@ -46,11 +46,6 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
 
-APPEND_HISTORY="true"
-HIST_IGNORE_DUPS="true"
-INC_APPEND_HISTORY="false"
-SHARE_HISTORY="false"
-
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
@@ -69,12 +64,8 @@ export MANPATH="/usr/local/man:$MANPATH"
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 LANGUAGE=en_US
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='vim'
-fi
+# Always prefer vim for editing
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -85,3 +76,10 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # EC2
 export EC2_CERT=$HOME/.ec2/certificate.pem
 export EC2_PRIVATE_KEY=$HOME/.ec2/privkey.pem
+
+# Configure ZSH history the way I want it: per shell history
+# Up-Arrow should always give the previous command, even if I've moved between shells / terminals / tabs
+export APPEND_HISTORY="true"
+export HIST_IGNORE_DUPS="true"
+export INC_APPEND_HISTORY="false"
+export SHARE_HISTORY="false"
