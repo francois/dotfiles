@@ -7,14 +7,6 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="maran"
 
-# Example aliases
-alias gl='git log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" -n 40'
-alias gs='git status --short'
-alias gpull='git pull'
-alias gpush='git push'
-alias ga='git add'
-alias gaa='git add --all'
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -83,3 +75,11 @@ export APPEND_HISTORY="true"
 export HIST_IGNORE_DUPS="true"
 export INC_APPEND_HISTORY="false"
 export SHARE_HISTORY="false"
+
+# Example aliases
+alias gl='git log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" -n 40'
+alias gs='git status --short'
+alias gpull='git pull'
+alias gpush='git push'
+alias ga='git add'
+alias gaa='git add --all'
