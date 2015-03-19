@@ -83,3 +83,6 @@ export APPEND_HISTORY="true"
 export HIST_IGNORE_DUPS="true"
 export INC_APPEND_HISTORY="false"
 export SHARE_HISTORY="false"
+
+PERL_MB_OPT="--install_base \"/home/francois/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/francois/perl5"; export PERL_MM_OPT;
