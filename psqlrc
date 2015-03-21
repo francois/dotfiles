@@ -8,8 +8,7 @@
 \pset linestyle unicode
 \pset border 1
 \pset null '[NULL]'
-\set PROMPT1 '%[%033[31;5m%]%x%[%033[0m%]%[%033[31;1m%]%n%[%033[33;1m%]@%[%033[32;1m%m%[%033[0m%] %[%033[34;1m%]%/%[%033[0m%] # '
-\set PROMPT2 '%033[33;1m >>> %033[0m%'
+\set PROMPT1 '%x%n@%m %/ # '
 \pset pager on
 \timing
 \encoding unicode
