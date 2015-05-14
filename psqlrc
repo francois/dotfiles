@@ -1,0 +1,15 @@
+\set QUIET ON
+
+\set HISTFILE ~/.psql_history- :HOST - :DBNAME
+\set HISTSIZE 2000
+\set COMP_KEYWORD_CASE upper
+
+\x off
+\pset linestyle unicode
+\pset border 1
+\pset null '[NULL]'
+\set PROMPT1 '%x%n@%m %/ # '
+\pset pager on
+\timing
+\encoding unicode
+\unset quiet
