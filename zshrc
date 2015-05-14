@@ -83,3 +83,12 @@ alias gpull='git pull'
 alias gpush='git push'
 alias ga='git add'
 alias gaa='git add --all'
+
+PERL_MB_OPT="--install_base \"/home/francois/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/francois/perl5"; export PERL_MM_OPT;
+
+if [ -x $HOME/.rbenv/bin/rbenv ]
+then
+  export PATH=${HOME}/.rbenv/bin:${PATH}
+  eval "$(rbenv init -)"
+fi
