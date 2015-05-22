@@ -50,8 +50,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.cabal/bin"
-export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.cabal/bin:$HOME/perl5/bin"
+export MANPATH="/usr/local/man:$MANPATH:$HOME/perl5/man"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 LANGUAGE=en_US
@@ -84,8 +84,9 @@ alias gpush='git push'
 alias ga='git add'
 alias gaa='git add --all'
 
-PERL_MB_OPT="--install_base \"/home/${USER}/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/${USER}/perl5"; export PERL_MM_OPT;
+export PERL_MB_OPT="--install_base \"/home/${USER}/perl5\""; export PERL_MB_OPT;
+export PERL_MM_OPT="INSTALL_BASE=/home/${USER}/perl5"; export PERL_MM_OPT;
+export PERL5LIB="$HOME/perl5/lib/perl5"
 
 if [ -x $HOME/.rbenv/bin/rbenv ]
 then
