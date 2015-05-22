@@ -1,0 +1,17 @@
+-- Deploy [% project %]:[% change %] to [% engine %]
+[% FOREACH item IN requires -%]
+-- requires: [% item %]
+[% END -%]
+[% FOREACH item IN conflicts -%]
+-- conflicts: [% item %]
+[% END -%]
+
+SET client_min_messages TO 'warning';
+
+BEGIN;
+
+-- XXX Add DDLs here.
+
+COMMIT;
+
+-- vim: expandtab shiftwidth=2
