@@ -1,12 +1,10 @@
 execute pathogen#infect()
 
-set noswapfile number nowrap ignorecase smartcase wildmenu nobackup showcmd title wildmenu ruler linebreak expandtab modeline
+" 2 spaces, no tabs, line numbers, search case insensitively
+set noswapfile number nowrap ignorecase smartcase wildmenu nobackup showcmd title wildmenu ruler linebreak expandtab modeline shiftwidth=2 softtabstop=2 tabstop=2
 
 " Highlight search results incrementally as the text is typed
 set hlsearch incsearch
-
-" 2 spaces, no tabs
-set shiftwidth=2 softtabstop=2 expandtab
 
 set scrolloff=3
 set wildmode=list:longest,full
@@ -26,16 +24,9 @@ set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.
 "This is overridden per filetype below
 set noautoindent smartindent
 
-"The rest deal with whitespace handling and
-"mainly make sure hardtabs are never entered
-"as their interpretation is too non standard in my experience
-set softtabstop=2
-set tabstop=2
 " Note if you don't set expandtab, vi will automatically merge
 " runs of more than tabstop spaces into hardtabs. Clever but
 " not what I usually want.
-set expandtab
-set shiftwidth=2
 set shiftround
 set nojoinspaces
 set smarttab
@@ -62,7 +53,7 @@ let g:is_posix = 1
 
 "flag problematic whitespace (trailing and spaces before tabs)
 "Note you get the same by doing let c_space_errors=1 but
-"this rule really applys to everything.
+"this rule really applies to everything.
 highlight RedundantSpaces term=standout ctermbg=red guibg=red
 match RedundantSpaces /\s\+$\| \+\ze\t/ "\ze sets end of match so only spaces highlighted
 "use :set list! to toggle visible whitespace on/off
