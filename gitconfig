@@ -16,3 +16,8 @@
 [branch]
 	autosetuprebase = always
 	autosetupmerge = true
+[github]
+	site = https://github.com
+	endpoint = https://api.github.com
+[reflow]
+	git-server = GitHub
