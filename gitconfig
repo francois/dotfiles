@@ -21,3 +21,4 @@
 	endpoint = https://api.github.com
 [reflow]
 	git-server = GitHub
+	always-deploy-and-cleanup = true
