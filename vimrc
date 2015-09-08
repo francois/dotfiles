@@ -59,6 +59,9 @@ match RedundantSpaces /\s\+$\| \+\ze\t/ "\ze sets end of match so only spaces hi
 "use :set list! to toggle visible whitespace on/off
 set listchars=tab:>-,trail:.,extends:>
 
+let mapleader=","
+set timeoutlen=230
+
 syntax on
 filetype on
 filetype indent on
@@ -68,6 +71,7 @@ autocmd BufNewFile,BufRead Gemfile setfiletype ruby
 autocmd FileType c    setlocal noexpandtab shiftwidth=8 softtabstop=8 tabstop=8 noautoindent smartindent
 autocmd FileType make setlocal noexpandtab
 autocmd FileType ruby setlocal path=lib/,spec/,test/,bin/,.
+autocmd FileType ruby map <Leader>s :w<CR>:!ruby -c %<CR>
 
 " semi-colon removes search highlights
 map ; :nohlsearch<CR>
