@@ -2,6 +2,7 @@ execute pathogen#infect()
 
 " 2 spaces, no tabs, line numbers, search case insensitively
 set noswapfile number nowrap ignorecase smartcase wildmenu nobackup showcmd title wildmenu ruler linebreak expandtab modeline shiftwidth=2 softtabstop=2 tabstop=2
+set lazyredraw          " do not redraw during macro execution, in order to make macro execution faster
 
 " Highlight search results incrementally as the text is typed
 set hlsearch incsearch
