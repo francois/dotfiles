@@ -22,3 +22,5 @@
 [reflow]
 	git-server = GitHub
 	always-deploy-and-cleanup = true
+[merge]
+	keepBackup = false
