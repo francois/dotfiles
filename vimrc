@@ -64,6 +64,11 @@ set listchars=tab:>-,trail:.,extends:>
 let mapleader=","
 set timeoutlen=230
 
+" Leader a aligns on =>
+map <Leader>a :Align =><CR>
+" Leader a aligns on =
+map <Leader>b :Align =<CR>
+
 filetype on
 filetype indent on
 
