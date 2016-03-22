@@ -36,16 +36,17 @@ set smarttab
 " Syntax highlighting
 """"""""""""""""""""""""""""""""""""""""""""""""
 
+" Do not syntax highlight
+" See https://www.robertmelton.com/2016/03/21/syntax-highlighting-off/
+" and https://github.com/robertmeta/nofrils
+syntax off
+let g:nofrils_strbackgrounds=1
+colorscheme nofrils-dark
+
 "Syntax highlighting if appropriate
 if &t_Co > 2 || has("gui_running")
-    syntax on
     set hlsearch
     set incsearch "For fast terminals can highlight search string as you type
-endif
-
-if &diff
-    "I'm only interested in diff colours
-    syntax off
 endif
 
 "syntax highlight shell scripts as per POSIX,
@@ -63,7 +64,6 @@ set listchars=tab:>-,trail:.,extends:>
 let mapleader=","
 set timeoutlen=230
 
-syntax on
 filetype on
 filetype indent on
 

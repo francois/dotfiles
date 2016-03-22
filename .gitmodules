@@ -40,3 +40,6 @@
 [submodule "vim/bundle/julia-vim"]
 	path = vim/bundle/julia-vim
 	url = git://github.com/JuliaLang/julia-vim.git
+[submodule "vim/bundle/nofrils"]
+	path = vim/bundle/nofrils
+	url = https://github.com/robertmeta/nofrils.git
