@@ -77,7 +77,8 @@ export INC_APPEND_HISTORY="false"
 export SHARE_HISTORY="false"
 
 # Example aliases
-alias gl='git log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" -n 40'
+# alias gl='git log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" -n 40'
+alias gl='git log --decorate --graph --oneline -n 40'
 alias gs='git status --short'
 alias gpull='git pull'
 alias gpush='git push'
