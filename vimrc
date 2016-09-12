@@ -44,9 +44,7 @@ set smarttab
 " Do not syntax highlight
 " See https://www.robertmelton.com/2016/03/21/syntax-highlighting-off/
 " and https://github.com/robertmeta/nofrils
-syntax off
-let g:nofrils_strbackgrounds=1
-colorscheme nofrils-dark
+syntax on
 
 "Syntax highlighting if appropriate
 if &t_Co > 2 || has("gui_running")
