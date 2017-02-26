@@ -88,6 +88,8 @@ map ; :nohlsearch<CR>
 " Auto-center the view on the next search term
 nmap n nzz
 nmap N Nzz
+nmap j gj
+nmap k gk
 
 " Easy window navigation
 map <C-h> <C-w>h
