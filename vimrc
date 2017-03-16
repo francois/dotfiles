@@ -25,6 +25,7 @@ set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.
 " Let Git handle the listing of files, since it's much quicker than iterating
 " the filesystem
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files --cached --modified --others --exclude-standard']
+let g:ctrlp_cmd = 'CtrlPMixed'
 
 "Default to autoindenting of C like languages
 "This is overridden per filetype below
