@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.cabal/bin:$HOME/perl5/bin"
+export PATH="/usr/local/bin:$( yarn global bin ):/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.cabal/bin:$HOME/perl5/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH:$HOME/perl5/man"
 
 # You may need to manually set your language environment
