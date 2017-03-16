@@ -76,6 +76,7 @@ filetype on
 filetype indent on
 
 autocmd BufNewFile,BufRead Gemfile setfiletype ruby
+autocmd BufNewFile,BufRead *.hbs setfiletype html
 
 autocmd FileType c    setlocal noexpandtab shiftwidth=8 softtabstop=8 tabstop=8 noautoindent smartindent
 autocmd FileType make setlocal noexpandtab
