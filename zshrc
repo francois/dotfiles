@@ -90,9 +90,8 @@ export PERL_MB_OPT="--install_base \"/home/${USER}/perl5\""; export PERL_MB_OPT;
 export PERL_MM_OPT="INSTALL_BASE=/home/${USER}/perl5"; export PERL_MM_OPT;
 export PERL5LIB="$HOME/perl5/lib/perl5"
 
-if [ -x $HOME/.rbenv/bin/rbenv ]
+if [ -d $HOME/.rvm/bin ]
 then
-  export PATH=${HOME}/.rbenv/bin:${PATH}
-  eval "$(rbenv init -)"
+  source /Users/francois/.rvm/scripts/rvm
+  export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 fi
-
