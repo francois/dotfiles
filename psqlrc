@@ -4,7 +4,7 @@
 \set HISTSIZE 2000
 \set COMP_KEYWORD_CASE upper
 
-\x off
+\x auto
 \pset border 1
 \pset null '[NULL]'
 \set PROMPT1 '%x%n@%m %/ # '
