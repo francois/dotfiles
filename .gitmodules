@@ -49,3 +49,6 @@
 [submodule "vim/bundle/vim-elixir"]
 	path = vim/bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "asdf"]
+	path = asdf
+	url = https://github.com/asdf-vm/asdf.git
