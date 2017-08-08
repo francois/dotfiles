@@ -72,6 +72,8 @@ set timeoutlen=230
 map <Leader>a :Align =><CR>
 " Leader a aligns on =
 map <Leader>b :Align =<CR>
+" Leader a aligns on {
+map <Leader>c :Align {<CR>
 
 filetype on
 filetype indent on
