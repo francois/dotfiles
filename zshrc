@@ -96,3 +96,21 @@ then
   source /Users/francois/.rvm/scripts/rvm
   export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 fi
+
+function get_pwd(){
+  git_root=$PWD
+  while [[ $git_root != / && ! -e $git_root/.git ]]; do
+    git_root=$git_root:h
+  done
+  if [[ $git_root = / ]]; then
+    unset git_root
+    prompt_short_dir=%~
+  else
+    parent=${git_root%\/*}
+    prompt_short_dir=${PWD#$parent/}
+  fi
+  echo $prompt_short_dir
+}
+
+PS1='%{$fg[cyan]%}%n%{$reset_color%}@%{$fg[yellow]%}%M:$(get_pwd)%{$reset_color%}$(git_prompt_info)
+%(!.#.$) '
