@@ -47,6 +47,9 @@ set smarttab
 " and https://github.com/robertmeta/nofrils
 syntax on
 
+set background=dark
+colorscheme solarized
+
 "Syntax highlighting if appropriate
 if &t_Co > 2 || has("gui_running")
     set hlsearch
