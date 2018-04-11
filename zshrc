@@ -84,7 +84,8 @@ alias gpull='git pull'
 alias gpush='git push'
 alias ga='git add'
 alias gaa='git add --all'
-alias gdc='git diff --cached'
+alias gd='git diff --color-moved'
+alias gdc='git diff --cached --color-moved'
 
 export PERL_MB_OPT="--install_base \"/home/${USER}/perl5\""; export PERL_MB_OPT;
 export PERL_MM_OPT="INSTALL_BASE=/home/${USER}/perl5"; export PERL_MM_OPT;
