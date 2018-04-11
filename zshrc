@@ -91,11 +91,8 @@ export PERL_MM_OPT="INSTALL_BASE=/home/${USER}/perl5"; export PERL_MM_OPT;
 export PERL5LIB="$HOME/perl5/lib/perl5"
 export LESS="-RFX ${LESS}"
 
-if [ -d $HOME/.rvm/bin ]
-then
-  source /Users/francois/.rvm/scripts/rvm
-  export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
-fi
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
 
 function get_pwd(){
   git_root=$PWD
