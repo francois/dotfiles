@@ -112,3 +112,4 @@ function get_pwd(){
 
 PS1='%{$fg[cyan]%}%n%{$reset_color%}@%{$fg[yellow]%}%M:$(get_pwd)%{$reset_color%}$(git_prompt_info)
 %(!.#.$) '
+export REVIEW_BASE=master

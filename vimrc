@@ -103,3 +103,8 @@ map <C-l> <C-w>l
 
 " Complete options (disable preview scratch window)
 set completeopt=menu,menuone,longest
+
+" https://github.com/airblade/vim-gitgutter
+" Recommended by gitgutter, reduce the amount of time between refreshes of the
+" git gutter
+set updatetime=100
