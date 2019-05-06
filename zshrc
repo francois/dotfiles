@@ -50,8 +50,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:$( yarn global bin ):/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.cabal/bin:$HOME/perl5/bin:$PATH"
-export MANPATH="/usr/local/man:$MANPATH:$HOME/perl5/man"
+export PATH="/usr/local/bin:$( yarn global bin ):/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.cabal/bin:$HOME/perl5/bin:$PATH"
+export MANPATH="/usr/local/man:$MANPATH:$HOME/perl5/man:/usr/local/opt/erlang/lib/erlang/man"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 LANGUAGE=en_US
