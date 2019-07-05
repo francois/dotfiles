@@ -21,12 +21,6 @@ set noerrorbells
 
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif
 
-" Configure CtrlP plugin
-" Let Git handle the listing of files, since it's much quicker than iterating
-" the filesystem
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files --cached --modified --others --exclude-standard']
-" let g:ctrlp_cmd = 'CtrlPMixed'
-
 "Default to autoindenting of C like languages
 "This is overridden per filetype below
 set noautoindent smartindent
@@ -37,6 +31,11 @@ set noautoindent smartindent
 set shiftround
 set nojoinspaces
 set smarttab
+
+" Append fzf (fuzzy file finder) to the runtime path
+" The runtimepath is used for files that vim will execute on boot
+set runtimepath+=/usr/local/opt/fzf
+nnoremap <C-p> :FZF<Cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Syntax highlighting
