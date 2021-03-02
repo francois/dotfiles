@@ -1,6 +1,7 @@
 [user]
 	email = francois@teksol.info
 	name = François Beausoleil
+	signingkey = CC8B14F1373C1489
 [push]
 	default = current
 [core]
@@ -14,13 +15,15 @@
 	branch = auto
 	interactive = auto
 [diff]
-	algorithm = patience
+	algorithm = histogram
 [branch]
 	autosetuprebase = always
 	autosetupmerge = true
 [github]
 	site = https://github.com
 	endpoint = https://api.github.com
+	username = francois
+	token = 7adc0826c2a229654a648baf925d44d576cfdd8f
 [reflow]
 	git-server = GitHub
 	always-deploy-and-cleanup = true
@@ -44,3 +47,15 @@
 	# instead of opening all files:
 	# git reviewone foo.js bar.js
 	reviewone = !vim -p +\"tabdo Gdiff $REVIEW_BASE\" +\"let g:gitgutter_diff_base = '$REVIEW_BASE'\"
+[fetch]
+	parallel = 4
+[init]
+	defaultBranch = mainline
+
+[diff "rspec"]
+  xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

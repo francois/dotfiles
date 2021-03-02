@@ -41,13 +41,10 @@ nnoremap <C-p> :FZF<Cr>
 " Syntax highlighting
 """"""""""""""""""""""""""""""""""""""""""""""""
 
-" Do not syntax highlight
-" See https://www.robertmelton.com/2016/03/21/syntax-highlighting-off/
-" and https://github.com/robertmeta/nofrils
 syntax on
 
 set background=dark
-colorscheme solarized
+colorscheme tempus_summer
 
 "Syntax highlighting if appropriate
 if &t_Co > 2 || has("gui_running")

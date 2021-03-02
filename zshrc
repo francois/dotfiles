@@ -44,7 +44,7 @@ export HIST_STAMPS="yyyy-mm-dd"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler)
+plugins=(git bundler ruby osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,6 +87,14 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gd='git diff --color-moved'
 alias gdc='git diff --cached --color-moved'
+alias gwip='git add --all && git commit --no-signoff --no-verify --message "WIP" && git push'
+alias gsw='git switch'
+alias gswc='git switch --create'
+alias gc='git commit --verbose -S'
+alias gca='git commit --verbose --all -S'
+
+alias vim='nvim'
+alias view='nvim -R'
 
 export PERL_MB_OPT="--install_base \"/home/${USER}/perl5\""; export PERL_MB_OPT;
 export PERL_MM_OPT="INSTALL_BASE=/home/${USER}/perl5"; export PERL_MM_OPT;
@@ -118,3 +126,8 @@ export REVIEW_BASE=master
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+# . /usr/local/opt/asdf/asdf.sh
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+export GPG_TTY=$(tty)
